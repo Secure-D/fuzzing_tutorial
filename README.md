@@ -89,7 +89,7 @@ The crash input files can be found at *output/crashes*, you can list them using 
 
 To see the content of the file, use cat.
 
-`cat output/crashes/<ชื่อไฟล์>`
+`cat output/crashes/<file_name>`
 
 <p align="center">
 <img src="images/fuzzing_afl_result.png" />
@@ -99,7 +99,7 @@ AFL has successfully mutated our input file to go into mode Z, even if our origi
 
 We can replicate the crash by using the crash input as our new input.
 
-`./supersafeprogram output/crashes/<ชื่อไฟล์>`
+`./supersafeprogram output/crashes/<file_name>`
 
 <p align="center">
 <img src="images/fuzzing_afl_replicate.png" />
